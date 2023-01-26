@@ -26,14 +26,15 @@
 
 <script>
 
-    var jokes=["With your creative talents, beautiful spirit and unwavering trustworthiness, you are a true inspiration and a blessing to those around you.","You're not a bad cook, you're just flavor-challenged.","You're not bad at telling jokes, you're just humor-impaired.","Let me Tell you that, You are the embodiment of grace and beauty, a true reflection of loveliness.","You possess a natural charm and elegance that is truly captivating.","You're not lost, you're just taking the scenic route to stupidity.","you know ? Your jokes are worse than a bad hair day, but at least they don't drag on and on","Your jokes are like an ugly sweater, they're not funny and you should probably just throw them away.","You're not single, you're just romantically challenged.","You're not bad at math, you're just using the wrong numbers.","You're not clumsy, you're just gravity-challenged.","Why did the tomato turn red? Because it saw the salad dressing.","You're not arguing, you're just explaining why you're right.","You're not short, you're just concentrated awesome.","You're not lazy, you're just on energy-saving mode.","You're not forgetful, you're just selectively remembering the good stuff.","You're not old, you're just chronologically gifted.","I know! You're not a morning person, you're a coffee person.","You're not broke, you're just temporarily out of funds.","You're not fat, you're just horizontally challenged."];
-    
+    var jokes=["Why was the math book sad? Because it had too many problems.","Why couldn't the bicycle stand up by itself? It was two-tired","Why don't scientists trust atoms? Because they make up everything.","Why did the chicken cross the playground? To get to the other slide.","Why don't oysters give to charity? They're shellfish.","What do you call a bear with no teeth? A gummy bear.","Why do elephants never use computers? They're afraid of the mouse.","Why did the cookie go to the doctor? Because it was feeling crumbly." ,"Why did the golfer bring two pairs of pants? In case he got a hole in one.","Why was the belt sent to jail? For holding up the pants.","Why did the banana go to the doctor? Because it wasn't peeling well.","You're not a waste of space, you're just a space that's not being used effectively.","You're not weak, you're just not as strong as you think you are.","You're not a disappointment, you're just a work in progress." ,"You're not bad, you're just not good at being good.","You're not late, you're just fashionably delayed.","You're not a failure, you're just a lesson in progress.","You're not old, you're just chronologically gifted.","You're not lost, you're just taking the scenic route to stupidity.","You're not sure how many problems you have because math is one of them.","You're not great at the advice. Can I interest you in a sarcastic comment?","You're not short, you're just concentrated awesome.","With your creative talents, beautiful spirit and unwavering trustworthiness, you are a true inspiration and a blessing to those around you.","You're not a bad cook, you're just flavor-challenged.","You're not bad at telling jokes, you're just humor-impaired.","Let me Tell you that, You are the embodiment of grace and beauty, a true reflection of loveliness.","You possess a natural charm and elegance that is truly captivating.","You're not lost, you're just taking the scenic route to stupidity.","you know ? Your jokes are worse than a bad hair day, but at least they don't drag on and on","Your jokes are like an ugly sweater, they're not funny and you should probably just throw them away.","You're not single, you're just romantically challenged.","You're not bad at math, you're just using the wrong numbers.","You're not clumsy, you're just gravity-challenged.","Why did the tomato turn red? Because it saw the salad dressing.","You're not arguing, you're just explaining why you're right.","You're not short, you're just concentrated awesome.","You're not lazy, you're just on energy-saving mode.","You're not forgetful, you're just selectively remembering the good stuff.","You're not old, you're just chronologically gifted.","I know! You're not a morning person, you're a coffee person.","You're not broke, you're just temporarily out of funds.","You're not fat, you're just horizontally challenged."];
+    var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120];
+    var randomNumber = Math.floor(Math.random()*num.length);
     var jokesIdx = Math.floor(Math.random()*jokes.length);
     var randomJoke=jokes[jokesIdx];
 var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
     document.write("<h1>"+"Hello "+visitor+"!</h1>");
     if(visitor==="daim"){
-        document.write()
+        document.write("I think you might need appreciation for programming me")
     }else if(visitor==="Sabba"){
         document.write();
         document.write("")
@@ -41,9 +42,15 @@ var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
         document.write();
     }else {     
         document.write(randomJoke);
-    
+        
     }
+    function randomNum(){
+        alert(visitor +"! I think "+ "Lucky Number for you is " + randomNumber);
+    }
+    function sameVisitor(){
+    document.write(randomJoke);
 
+}
 
 </script>
 <style>
@@ -52,7 +59,7 @@ var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
-  text-align: center;
+  text-align:right;
   text-decoration: none;
   outline: none;
   color: #fff;
@@ -68,9 +75,170 @@ var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+
 }
+/* CSS */
+.button-64 {
+    padding: 3px;
+  align-items: right;
+  display :inline;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+    text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  display:inline;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+} */
 </style>
-<a href="index.html"><button class="button"type="refresh">Again ?</button></a>
+
+
+
+
+<!-- <a href="#"><button onClick="sameVisitor()"class="button">Again ?</button></a> -->     <!--need to fix this-->
+<br>
+
+<br>
+<br>
+<button onClick="randomNum()"class="button-64"><span class="text">Lucky Number?</span></button>
+
+<a href="index.html"><button class="button-85" role="button">Change Visitor</button></a>
+
 	</head>
  	
 	<body>
