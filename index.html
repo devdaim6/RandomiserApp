@@ -31,7 +31,8 @@
     var randomNumber = Math.floor(Math.random()*num.length);
     var jokesIdx = Math.floor(Math.random()*jokes.length);
     var randomJoke=jokes[jokesIdx];
-var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
+var visitor=0;
+visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
     document.write("<h1>"+"Hello "+visitor+"!</h1>");
     if(visitor==="daim"){
         document.write("I think you might need appreciation for programming me")
@@ -45,6 +46,10 @@ var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
     else {     
         document.write(randomJoke);
         
+    }
+    if(visitor===null || visitor===0){
+      alert("Enter your Name");
+
     }
     function randomNum(){
         alert(visitor +"! I think "+ "Lucky Number for you is " + randomNumber);
@@ -230,9 +235,26 @@ var visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
 </style>
 
 
+<style>
+body {
+  color: white;
+  width: 930px;
+  margin: 0 auto;
+          background: #FF6600; /* hexadecimal number */
+          padding: 15px;
+          font-size: 30px;
+}
 
 
-<!-- <a href="#"><button onClick="sameVisitor()"class="button">Again ?</button></a> -->     <!--need to fix this-->
+
+h1 {
+  font-size: 130px;
+  color: #333	;
+}
+</style>
+
+
+<!-- <a href="#"><button onClick="sameVisitor()"class="button">Again ?</button></a>     need to fix this -->
 <br>
 
 <br>
