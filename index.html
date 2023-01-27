@@ -33,20 +33,21 @@
     var randomJoke=jokes[jokesIdx];
 var visitor=0;
 visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
-    document.write("<h1>"+"Hello "+visitor+"!</h1>");
+   document.write("<h1>"+"Hello "+visitor+"!</h1>");  
     if(visitor==="daim"){
         document.write("I think you might need appreciation for programming me")
+    } else {    
+        document.write(randomJoke);
+        
     }
-    // else if(visitor==="Sabba"){
+  /*  else if(visitor==="Sabba"){
     //     document.write("");
     //     document.write("")
     // }else if(visitor==="Sakeeb"){
     //     document.write();
-    // }
-    else {     
-        document.write(randomJoke);
-        
-    }
+    // } */
+   
+  
     if(visitor===null || visitor===0){
       alert("Enter your Name");
 
@@ -54,10 +55,9 @@ visitor=prompt("Hello Mr./Miss/Mrs , who are you ?");
     function randomNum(){
         alert(visitor +"! I think "+ "Lucky Number for you is " + randomNumber);
     }
-    function sameVisitor(){
-    document.write(randomJoke);
+   
 
-}
+
 
 </script>
 <style>
@@ -254,18 +254,42 @@ h1 {
 </style>
 
 
-<!-- <a href="#"><button onClick="sameVisitor()"class="button">Again ?</button></a>     need to fix this -->
-<br>
+
 
 <br>
 <br>
-<button onClick="randomNum()"class="button-64"><span class="text">Lucky Number?</span></button>
-
-<a href="index.html"><button class="button-85" role="button">Change Visitor</button></a>
+<button onClick="randomNum()"class="button-64"><span class="text">Lucky Number?</span></button><a href="index.html"><button class="button-85" role="button">Change Visitor</button></a>
 
 	</head>
  	
 	<body>
 	</body>
+<br><br><br><br><br> 
+<br><br><br><br><br> <br><br><br><br>
+  <footer>
+    <br><br><br><br>
+    <style>
+    .copyright {
+      color: #ffffff;
+    
+      padding: 20px 0;
+  }
+  </style>
+      <br><br><br><br>
+      <br><br>
+      <br><br><br><br>
+      <br><br><br><br>
+    <section class="copyright">
+  
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 text-center">
+              &copy;    Copyright 2022 | All Rights Reserved -- <a href="http://devdaim.me">DevDaim</a>
+              </div>
+          </div>
+          <!-- / .row -->
+      </div>
+  </section>
 
+  </footer>
 </html>
