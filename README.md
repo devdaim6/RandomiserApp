@@ -1,2 +1,2 @@
 # RandomiserApp
-find it on : randomiserapp.netlify.app
+find it on : https://randomiserapp.netlify.app
